@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class FirestoreService {
 
 	constructor(
-	private firestore: AngularFirestore
+		private firestore: AngularFirestore
 	) { }
 
 	public getProject(documentId: string) {

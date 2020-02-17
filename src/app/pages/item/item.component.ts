@@ -11,7 +11,7 @@ import { FirestoreService } from 'src/app/services/firestore/firestore.service';
 })
 export class ItemComponent implements OnInit {
 
-  public item = {};
+  public item = null;
 
   constructor(
     private route: ActivatedRoute,
