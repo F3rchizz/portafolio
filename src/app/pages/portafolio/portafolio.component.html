@@ -15,8 +15,12 @@
 <section class="ae-container-fluid ae-container-fluid--inner loading rk-portfolio ">
     <div class="rk-portfolio__items">
         
-        <a routerLink="/item" *ngFor="let item of projects; let i = index"
-            class="rk-item rk-item--flex rk-size-12 rk-tosize-6" [ngClass]="{'rk-landscape': i == 0, 'rk-portrait': i > 0}" [ngStyle]="{'background-image': setImage(item.image) }">
+        <a *ngFor="let item of projects; let i = index"
+            class="rk-item rk-item--flex rk-size-12 rk-tosize-6" 
+            [ngClass]="{'rk-landscape': i == 0, 'rk-portrait': i > 0}" 
+            [ngStyle]="{'background-image': setImage(item.image) }"
+            [routerLink]="['/item', item.id]"
+        >
             <div class="item-meta">
                 <h2>{{item.name}}</h2>
                 <p>{{item.activity}}</p>
