@@ -25,68 +25,25 @@
 </div>
 
 <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
-    
-    <div class="ae-grid ae-grid--collapse au-xs-ptp-1" *ngFor="let obj of item.details">
-    
-    
-        <div *ngIf="obj.section == 'left'">
-            <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
+
+    <div *ngFor="let obj of item.details">
+        <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1" *ngIf="obj.title || obj.text">
+            <div class="ae-grid__item item-lg-8 item-lg--offset-2">
                 <h4 class="ae-u-bolder" *ngIf="obj.title">{{obj.title}}</h4>
                 <p class="ae-eta">{{obj.text}}</p>
             </div>
-            <div class="ae-grid__item item-lg-6 item-lg--offset-1" *ngIf="obj.type && obj.type == 'video'">
+        </div>
+        <div class="ae-grid ae-grid--collapse">
+            <div class="ae-grid__item item-lg--auto" *ngIf="!obj.type || (obj.type && obj.type == 'image')">
+                <img [src]="obj.img" alt="Urku Portfolio">
+            </div>
+            <div class="ae-grid__item item-lg--auto" *ngIf="obj.type && obj.type == 'video'">
                 <video width="640" height="480" controls>
                     <source [src]="obj.img" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="ae-grid__item item-lg-6 item-lg--offset-1" *ngIf="!obj.type || (obj.type && obj.type == 'image')">
-                <img [src]="obj.img" alt="MF Portfolio">
-            </div>
         </div>
-    
-    
-        <div *ngIf="obj.section == 'right'">
-            <div class="ae-grid ae-grid--collapse">
-                <div class="ae-grid__item item-lg-8" *ngIf="obj.type && obj.type == 'video'">
-                    <video width="640" height="480" controls>
-                        <source [src]="obj.img" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="ae-grid__item item-lg-8" *ngIf="!obj.type || (obj.type && obj.type == 'image')">
-                    <img [src]="obj.img" alt="MF Portfolio">
-                </div>
-                <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
-                    <h4 class="ae-u-bolder" *ngIf="obj.title">{{obj.title}}</h4>
-                    <p>{{obj.text}}</p>
-                </div>
-            </div>
-        </div>
-    
-    
-        <div *ngIf="obj.section == 'full'">
-            <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
-                <div class="ae-grid__item item-lg-8 item-lg--offset-2">
-                    <h4 class="ae-u-bolder" *ngIf="obj.title">{{obj.title}}</h4>
-                    <p class="ae-eta">{{obj.text}}</p>
-                </div>
-            </div>
-            <div class="ae-grid ae-grid--collapse">
-                <div class="ae-grid__item item-lg--auto" *ngIf="!obj.type || (obj.type && obj.type == 'image')">
-                    <img [src]="obj.img" alt="Urku Portfolio">
-                </div>
-                <div class="ae-grid__item item-lg--auto" *ngIf="obj.type && obj.type == 'video'">
-                    <video width="640" height="480" controls>
-                        <source [src]="obj.img" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-    
-    
     </div>
-
 
 </div>
