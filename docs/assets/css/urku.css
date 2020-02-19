@@ -80,6 +80,7 @@ body {
   padding-bottom: 3.3rem;
   padding-top: 2.8rem;
 }
+
 @media (min-width: 64em) {
   .rk-topbar {
     padding-bottom: 0;
@@ -98,8 +99,6 @@ body {
   text-transform: uppercase;
   width: 20%;
 }
-
-
 .rk-logo sup {
   font-size: .5625rem;
   position: relative;
