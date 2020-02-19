@@ -1,3 +1,15 @@
 .social-menu {
     display: contents;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+}
+
+h4, h5, h6, p{
+    font-family: 'Quicksand', sans-serif;
+}

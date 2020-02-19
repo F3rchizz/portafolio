@@ -98,6 +98,8 @@ body {
   text-transform: uppercase;
   width: 20%;
 }
+
+
 .rk-logo sup {
   font-size: .5625rem;
   position: relative;
@@ -1269,10 +1271,10 @@ body {
   -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-          align-items: flex-end;
-  height: 40vh;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
   padding-bottom: 1.5rem;
   width: 100%;
 }
@@ -1351,7 +1353,7 @@ body {
 
 .item-inside-1 {
   background-image: url("../img/project-1.jpg");
-  background-position: 100%;
+  background-position: top;
   background-size: 100%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {

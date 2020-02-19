@@ -80,6 +80,7 @@ body {
   padding-bottom: 3.3rem;
   padding-top: 2.8rem;
 }
+
 @media (min-width: 64em) {
   .rk-topbar {
     padding-bottom: 0;
@@ -1269,10 +1270,10 @@ body {
   -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-          align-items: flex-end;
-  height: 40vh;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
   padding-bottom: 1.5rem;
   width: 100%;
 }
@@ -1351,7 +1352,7 @@ body {
 
 .item-inside-1 {
   background-image: url("../img/project-1.jpg");
-  background-position: 100%;
+  background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
 }
