@@ -1285,6 +1285,7 @@ body {
 
 .rk-portfolio--inner img {
   width: 100%;
+  max-width: 1024px;
 }
 
 .rk-portfolio-title {
@@ -1336,6 +1337,7 @@ body {
 .item-inside__meta .rk-portfolio-category {
   position: relative;
   z-index: 2;
+  display: none;
 }
 
 .inner-box-1 {
@@ -1355,6 +1357,8 @@ body {
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .item-inside-1 {
