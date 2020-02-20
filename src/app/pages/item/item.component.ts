@@ -26,8 +26,9 @@ export class ItemComponent implements OnInit {
     } );
   }
 
-  public setImage(image) {
-    return `url("${image}")`;
+  public setImage(item) {
+    let img: string = item.banner ? item.banner : item.image;
+    return `url("${img}")`;
   }
 
 }
